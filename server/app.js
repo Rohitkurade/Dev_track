@@ -20,6 +20,23 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// Welcome route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to Dev_Track API',
+    version: '1.0.0',
+    endpoints: {
+      auth: '/api/auth',
+      problems: '/api/problems',
+      jobs: '/api/jobs',
+      projects: '/api/projects',
+      analytics: '/api/analytics',
+      admin: '/api/admin',
+    },
+  });
+});
+
 // Health check route
 app.get('/health', (req, res) => {
   res.status(200).json({
