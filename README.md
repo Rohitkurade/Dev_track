@@ -1,7 +1,6 @@
 # DevTrack - Developer Career Progress & Job Tracking Platform
 
 A full-stack MERN application to help developers track their DSA problem-solving progress, job applications, and projects all in one place.
-<img width="1898" height="905" alt="image" src="https://github.com/user-attachments/assets/258cda75-809e-4be3-abcb-2cc2724fa5ba" />
 
 
 ## 🚀 Features
